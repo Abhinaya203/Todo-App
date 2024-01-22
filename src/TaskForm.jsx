@@ -4,7 +4,7 @@ function TaskForm(props) {
       <div className="container-flex bg-light">
         <form>
           <div className="row py-5 px-5">
-            <div className="col-lg-10">
+            <div className="col-lg-8">
               <input
                 onChange={props.handleChange}
                 className="form-control"
@@ -29,6 +29,12 @@ function TaskForm(props) {
                 </button>
               )}
             </div>
+            <button
+              className="col-lg-2 btn btn-success"
+              onClick={props.handleCompleteBtn}
+            >
+              Completed Tasks
+            </button>
           </div>
         </form>
       </div>
